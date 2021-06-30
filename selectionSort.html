@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Selection Sort</title>
+        <link rel="stylesheet" href="SortingStyle.css">
+        <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet'>
+    </head>
+    <body>
+        <div id="main-container">
+            <h1>Selection Sort Visulization</h1>
+            <div class="button-div">
+                <button id="array-generate">Generate Array</button>
+                <button id="toggle-btn">Start</button>
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="10" max="100" value="55" class="slider" id="range-value">
+            </div>
+            <div class="utility">
+                <p id="timer">Time: <span id="time">00 : 00 . 000</span></p>
+                <p id="array-length">Array Length: <span id="array-number">0</span></p>
+            </div>
+            <div id="canvas-container">
+                <canvas></canvas>
+            </div>
+            <!--
+            <div id="main-algo">
+                <div id="overlay-algo">
+                    <h3>Want to see the interesting algorithm that works behinf the scene? Hover Over Me</h3>
+                </div>
+                <div id="algo">
+                    <pre>
+                        <code>
+                            for(let i = 0; i < array.length - 1; i++) {
+                                let pos = i;
+                                for(let j = i + 1; j < array.length; j++) {
+                                    if(array[pos] > array[j]) {
+                                        pos = j;
+                                    }
+                                }
+                                let temp = array[i];
+                                array[i] = array[pos];
+                                array[pos] = temp;
+                            }
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        -->
+            <!-- <p id="para-copyright">&copy; SARNAVO SARKAR PRODUCTION</p> -->
+        </div>
+        <script src="selectionSort.js"></script>
+    </body>
+</html>

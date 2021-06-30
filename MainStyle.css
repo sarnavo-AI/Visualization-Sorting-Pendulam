@@ -21,6 +21,7 @@ body {
     border-left: 5px solid rgba(16, 76, 145, 0.5);
     left: 50%;
     top: 20%;
+    margin-left: -3px;
 }
 
 .row .heading {
