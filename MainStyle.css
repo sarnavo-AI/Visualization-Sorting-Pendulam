@@ -1,0 +1,23 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.main-container > div {
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.main-content > div {
+    display: inline-block;
+    width: 50%;
+    border: 1px solid black;
+}
