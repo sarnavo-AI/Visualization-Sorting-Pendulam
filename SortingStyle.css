@@ -113,18 +113,20 @@
     display: inline-block;
     font-size: 25px;
     margin: 10px 0px;
-    width: 300px;
+    width: 200px;
     color: black;
     /* border: 2px solid black; */
 }
 
-.utility #timer {
+.utility .text {
+    display: inline-block;
+    /* width: 10px; */
     text-align: right;
-    margin-right: 30px;
+    margin-right: 5px;
+    /* border: 2px solid black; */
 }
 
-.utility #array-length {
-    text-align: left;
+.utility #timer, #array-length {
     margin-left: 30px;
 }
 

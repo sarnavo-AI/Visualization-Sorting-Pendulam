@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet'>
+    <link type="text/css" rel="stylesheet" href="pendulumStyle.css">
+    <title>Simple Pendulum</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Simple Pendulum</h1>
+        <div class="value-input">
+            <ul>
+                <li>
+                    <label for="length">Enter the length of the string(m): </label>
+                    <input id="length" type="number" value="1" min="1" max="2" step="1"/>
+                </li>
+                <li>
+                    <label for="angleDeg">Enter the Starting angle(deg): </label>
+                    <input id="angleDeg" type="number" value="0" min="0" max="90" step="1"/>
+                </li>
+                <li>
+                    <label for="damping">Enter the damping constant: </label>
+                    <input id="damping" type="number" value="0" min="0" max="1" step="0.0003"/>
+                </li>
+            </ul>
+        </div>
+        <div class="button-list">
+            <button id="go">Go</button>
+            <button id="pause">Pause</button>
+            <button id="play">Play</button>
+        </div>
+        <div class="utility">
+            <p id="time"><span class="text">Time: </span><span id="timeSpan">00 : 00 . 000</span></p>
+            <p id="angle"><span class="text">Angle: </span><span id="angleSpan">0 . 00</span></p>
+        </div>
+        <div class="canvas-container">
+            <canvas></canvas>
+        </div>
+    </div>
+    <script src="pendulam.js"></script>
+</body>
+</html>

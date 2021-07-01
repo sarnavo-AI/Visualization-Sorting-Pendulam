@@ -163,10 +163,12 @@ function reset() {
 }
 
 function transform() {
-    let date = new Date(time);
-    let millisec = date.getMilliseconds();
-    let sec = date.getSeconds();
-    let min = date.getMinutes();
+    var tempTotalTime = time;
+    var millisec = tempTotalTime % 1000;
+    tempTotalTime = Math.floor(tempTotalTime / 1000);
+    var sec = tempTotalTime % 60;
+    tempTotalTime = Math.floor(tempTotalTime / 60);
+    var min = tempTotalTime % 60;
 
     // console.log(min, sec, millisec);
 
